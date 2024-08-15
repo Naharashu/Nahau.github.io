@@ -1,0 +1,115 @@
+        body {
+            background-image: linear-gradient(90deg, #ffd200, #ff8c3d, #ff3f86, #e83ad2, #0064ff);
+            color: aliceblue;
+            background-size: cover;
+            text-align: center;
+            align-content: center;
+            font-family: cursive;
+        }
+        
+        a {
+            text-decoration: none;
+            color: rgb(5, 61, 214);
+            font-weight: bold;
+            transition: color 0.3s ease;
+            text-shadow: black;
+        }
+        
+        a:hover {
+            color: rgb(16, 3, 199);
+            text-decoration: solid;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            /* Зменшити ширину форми */
+            margin: 0 auto;
+            /* Центрувати форму на сторінці */
+            padding: 20px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            background-color: rgb(0, 204, 255);
+            color: #2b1b1b;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        input,
+        textarea {
+            font-family: inherit;
+            /* Використовує ту ж шрифт як у батьківського елемента */
+            font-size: 1em;
+            /* Розмір шрифту */
+            padding: 10px;
+            /* Внутрішні відступи */
+            border: 2px solid #2b1b1b;
+            /* Колір та товщина рамки */
+            border-radius: 1px;
+            /* Закруглені кути */
+            background-color: #fff;
+            /* Колір фону */
+            color: #333;
+            /* Колір тексту */
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+            /* Тінь всередині елемента */
+            transition: border-color 0.3s, box-shadow 0.3s;
+            /* Плавний перехід для рамки та тіні */
+        }
+        
+        input:focus,
+        textarea:focus {
+            border-color: hsl(200deg 100% 70%);
+            /* Колір рамки при фокусуванні */
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            /* Тінь при фокусуванні */
+            outline: none;
+            /* Видалити стандартне виділення */
+        }
+        
+        input[type="submit"],
+        button {
+            background-color: hsl(200, 96%, 40%);
+            /* Колір фону кнопки */
+            color: #fff;
+            /* Колір тексту на кнопці */
+            border: none;
+            /* Без рамки */
+            padding: 10px 20px;
+            /* Внутрішні відступи */
+            border-radius: 5px;
+            /* Закруглені кути */
+            cursor: pointer;
+            /* Курсор у вигляді руки */
+            transition: background-color 0.3s, box-shadow 0.3s;
+            /* Плавний перехід для кольору фону та тіні */
+        }
+        
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: hsl(200, 98%, 32%);
+            /* Темніший колір фону при наведенні */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            /* Тінь при наведенні */
+        }
+        
+        button {
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgb(66, 124, 233);
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input:valid {
+            background-color: rgba(0, 128, 0, 0.411);
+        }
+        
+        input:invalid {
+            background-color: rgba(255, 0, 0, 0.726);
+            color: aqua;
+        }
